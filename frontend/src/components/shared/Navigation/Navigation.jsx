@@ -3,11 +3,23 @@ import { Link } from 'react-router-dom'
 import styles from './Navigation.module.css'
 
 const Navigation = () => {
+  const brandStyle={
+    color: '#fff',
+    textDecoration: 'none',
+    fondWeight: 'bold',
+    fontSize: '22px',
+    display: 'flex',
+    alignItems: 'center'
+  }
+  const logoText ={
+    marginLeft: '10px',
+  }
   return (
     <nav className={`${styles.navbar} container`}>
-      {/* <Link to="/"> */}
+      {/* <Link style={brandStyle} to="/"> */}
         <img src="/images/logo.png" alt="logo" />
-        <span>All-aboard</span>
+        <span style={logoText
+        }>All-aboard</span>
       {/* </Link> */}
     </nav>
 
