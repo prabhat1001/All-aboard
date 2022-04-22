@@ -5,13 +5,15 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+       <Navigation />
       {/* <Router>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
       </Router> */}
-      <Navigation />
-      <>Boby Chaudhary</>
+      <Home/>
+     
+      
     </div>
   );
 }
