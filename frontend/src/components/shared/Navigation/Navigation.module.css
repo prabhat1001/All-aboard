@@ -1,3 +1,17 @@
-navbar {
-    padding: 20px 0;
+nav{
+    padding: 20px;
+    /* height: 40px;  */
+    width: 100%;
+    /* background-color: #00ffff;  */
+ 
+  
+}
+nav img{
+    width: 25px;
+    height: 25px;
+}
+nav span{
+    position: absolute;
+    width: 192px;
+    height: 31px;
 }

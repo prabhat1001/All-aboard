@@ -15,13 +15,14 @@ const Home = () => {
     <div className={styles.cardWrapper}>
       <Card title="Welcome to All-aboard !" icon="logo">
         <p className={styles.text}>                     {/*children */}
-          We're working hard to get All-aboard ready for everyone! While we wrap up the finishing youches, we’re adding people gradually to make sure nothing breaks :)
+          We're working hard to get All-aboard ready for everyone! 
+          While we wrap up the finishing youches, we’re adding people gradually to make sure nothing breaks :)
         </p>
         <div>
           <Button text="Get your username"/>
         </div>
         <div className={styles.signinWrapper}>
-          <span className={styles.hasInvite}>Have an invite text?</span>
+          <span className={styles.hasInvite}>Have an invite text? </span>
           {/* <Link style={signInLinkStyle} to="/login">Sign in</Link> */}
           Sign in
         </div>                                  

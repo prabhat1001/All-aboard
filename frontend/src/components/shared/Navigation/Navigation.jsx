@@ -18,8 +18,7 @@ const Navigation = () => {
     <nav className={`${styles.navbar} container`}>
       {/* <Link style={brandStyle} to="/"> */}
         <img src="/images/logo.png" alt="logo" />
-        <span style={logoText
-        }>All-aboard</span>
+        <span style={logoText}>All aboard</span>
       {/* </Link> */}
     </nav>
 

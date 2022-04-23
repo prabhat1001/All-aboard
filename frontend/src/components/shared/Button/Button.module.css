@@ -7,14 +7,14 @@
     align-items: center;
     margin: 0 auto;
     color: white;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 400;
     border-radius: 50px;
     cursor: pointer;
-    transition: all .3s ease-in-out;
+    transition: all ;
 }
 .button:hover {
-    background: #0f3c5a;
+    background: #38afff;
 
 }
 .arrow {
