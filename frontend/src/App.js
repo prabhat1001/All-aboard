@@ -9,14 +9,17 @@ import Login from './Pages/Login/Login';
 function App() {
   return (
     <div className="App">
-       <Navigation />
-       <Router>
+        <Navigation />
+       <Home />
+       <Register />
+        <Login /> 
+       {/* <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
         </Routes>
-      </Router> 
+      </Router>  */}
       
      
       
