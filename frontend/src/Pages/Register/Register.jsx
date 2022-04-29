@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-import styles from './Register.module.css';
+// import styles from './Register.module.css';  
 import StepPhoneEmail from '../Steps/StepPhoneEmail/StepPhoneEmail';
 import StepAvatar from '../Steps/StepAvatar/StepAvatar';
 import StepName from '../Steps/StepName/StepName';
@@ -20,10 +20,15 @@ const Register=()=>{
     const [step,setStep]=useState(1);
     const Step=steps[step];
 
-function onNext(){
-    setStep(step+1);
-}
-    return <Step onNext={onNext} />
+    function onNext(){
+        setStep(step+1);
+    }
+
+    return(
+        <div>
+            <Step onNext={onNext}/>
+        </div>
+    );
 };
 
 export default Register;
