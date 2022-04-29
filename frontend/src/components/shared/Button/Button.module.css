@@ -11,7 +11,7 @@
     font-weight: 400;
     border-radius: 50px;
     cursor: pointer;
-    transition: all ;
+    transition: all 0.2s ease-in-out ;
 }
 .button:hover {
     background: #38afff;

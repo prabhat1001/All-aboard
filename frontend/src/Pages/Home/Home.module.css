@@ -5,6 +5,7 @@
     margin-bottom: 30px;
     margin-left: 80px;
     margin-right: 80px;
+    
 }
 Button{
     font-size: 0.1rem;
@@ -13,7 +14,9 @@ Button{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
+    min-height: 80vh;
+    
 }
 
 .signinWrapper {
