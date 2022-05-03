@@ -20,7 +20,7 @@ const Home = () => {
   // }
 
   function startRegister() {
-    navigate("/register");     
+    navigate("/authenticate");     
     console.log("button clicked..");
   }
 
@@ -36,14 +36,14 @@ const Home = () => {
         </p>
 
         <div>
-          <Button onClick={startRegister} text="Get your username"></Button>
+          <Button onClick={startRegister} text="Let's Go"></Button>
         </div>
 
         <div className={styles.signinWrapper}>
           <span className={styles.hasInvite}>Have an invite text?</span>
-          <Link style={signInLinkStyle} to="login">
-            Sign in
-          </Link>
+          {/* <Link style={signInLinkStyle} to="login"> */}
+            {/* Sign in */}
+          {/* </Link> */}
         </div>
       </Card>
     </div>
