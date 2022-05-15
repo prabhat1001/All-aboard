@@ -6,4 +6,4 @@ const Activate = () => {
   )
 }
 
-export default Activate
+export default Activate;

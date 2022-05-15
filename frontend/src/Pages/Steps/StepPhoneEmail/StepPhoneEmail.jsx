@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import styles from './StepPhoneEmail.module.css'
 import Phone from "./Phone/Phone";
 import Email from "./Email/Email";
-import styles from "./StepPhoneEmail.module.css";
+// import styles from "./StepPhoneEmail.module.css";
 const phoneEmailMap = {
   phone: Phone,
   email: Email
@@ -15,7 +15,6 @@ const StepPhoneEmail = ({onNext}) => {
     
 function onNext(){
         
-    }
   return (
     <>
     <div className={styles.cardwrapper}>
@@ -32,9 +31,9 @@ function onNext(){
 
     </div>
     </>
-  )
+  );
   
     
-}
+}};
 
 export default StepPhoneEmail;
