@@ -41,9 +41,9 @@ const Home = () => {
 
         <div className={styles.signinWrapper}>
           <span className={styles.hasInvite}>Have an invite text?</span>
-          <Link style={signInLinkStyle} to="login"> 
+          {/* <Link style={signInLinkStyle} to="login"> 
              Sign in 
-          </Link> 
+          </Link>  */}
         </div>
       </Card>
     </div>
