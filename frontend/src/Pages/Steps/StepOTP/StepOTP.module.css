@@ -1,6 +1,15 @@
-.NextButton{
-    width: 60px;
-    height: 30px;
-    font-size: 12px;
-    margin-top: 5px;
+.codeWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:  6rem;
+}
+.bottomParagraph{
+    color: c4c5c5;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.actionButtonWrap{
+    margin-top: 40px;
 }
