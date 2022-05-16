@@ -8,7 +8,7 @@ import Login from "./Pages/Login/Login";
 import Authenticate from "./Pages/Authenticate/Authenticate";
 import Activate from "./Pages/Activate/Activate";
 import Rooms from "./Pages/Rooms/Rooms"
-const isAuth = true;
+const isAuth = false;
 const user = {
     activated: true,
 };
@@ -28,7 +28,7 @@ function App() {
       <Router>
           <Navigation/>
           <Routes>
-              <Route exact path="/" element={<Home/>}></Route>            
+              <Route exact path="/" element={(<GuestRoute><Home/></GuestRoute>)} ></Route>            
               <Route path="/authenticate" element={(<GuestRoute><Authenticate/></GuestRoute>)} ></Route>
               <Route path="/activate" element={(<SemiProtectedRoute><Activate/></SemiProtectedRoute>)}></Route>
               <Route path="/rooms" element={(<ProtectedRoute><Rooms/></ProtectedRoute>)}></Route>
