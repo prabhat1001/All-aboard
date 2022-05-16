@@ -41,15 +41,13 @@ function App() {
     </div>
   );
 }
+;
 
 // GUEST ROUTE
-const GuestRoute = ({ children,...rest }) => {
-  return (
-      <Route {...rest}
-      render={({location})=>{
-          return isAuth ? (
+const GuestRoute = ({ children, location}) => {
+  return  isAuth ? (
           <Navigate to={{
-              pathname: '/Rooms',
+              pathname: '/rooms',
               state: {from: location}
             }}
             />
@@ -58,75 +56,53 @@ const GuestRoute = ({ children,...rest }) => {
           (
             children
           );
-        }}
-      >
-      </Route>
-    );
-};
+}
 
 
 // SEMI-PROTECTED ROUTE
-const SemiProtectedRoute=({children,...rest})=>{
+const SemiProtectedRoute=({children, location})=>{
   // const { user, isAuth } = useSelector((state) => state.auth);
-  return(
-    <Route {...rest}
-      render={({location}) => {
-        return !isAuth ?
-          (
-            <Navigate to={{
-                      pathname:'/',
-                      state:{ from: location},
-            }}/>
-          ) 
-          : 
-          isAuth && !user.activated ?
-          ( children ) 
-          :
-          (
-            <Navigate to={{
-                      pathname:'/rooms',
-                      state:{ from: location},
-            }}/>
-          );
-      }
-    }>
-    </Route>
-  );
-  
-};
+    return !isAuth ?(
+              <Navigate to={{
+                        pathname:'/',
+                        state:{ from: location},
+              }}/>
+            ) 
+            : 
+            isAuth && !user.activated ?
+            ( children ) 
+            :
+            (
+              <Navigate to={{
+                        pathname:'/rooms',
+                        state:{ from: location},
+              }}/>
+            );
+  }
+    
 
 
 // PROTECTED ROUTE
-const ProtectedRoute=({children,...rest})=>{
+const ProtectedRoute=({children, location})=>{
   // const { user, isAuth } = useSelector((state) => state.auth);
-  return(
-    <Route {...rest}
-      render={({location}) => {
-        return !isAuth ?
-        (
+     
+      return !isAuth ?(
           <Navigate to={{
                     pathname:'/',
                     state:{ from: location},
           }}/>
         ) 
-        
         : isAuth && !user.activated ? 
-        
         (
           <Navigate to={{
                     pathname: '/activate',
                     state: { from: location },
           }}/>
         ) 
-        
         : 
-        
         ( children);
-      }
-    }> 
-    </Route> 
-  );
-      
-};
+  }
+   
+
   
 export default App;
