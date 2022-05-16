@@ -26,7 +26,9 @@ function App() {
       <Router>
           <Navigation/>
           <Routes>
+
               <Route exact path="/" element={(<GuestRoute><Home/></GuestRoute>)}></Route>            
+
               <Route path="/authenticate" element={(<GuestRoute><Authenticate/></GuestRoute>)} ></Route>
               <Route path="/activate" element={(<SemiProtectedRoute><Activate/></SemiProtectedRoute>)}></Route>
               <Route path="/rooms" element={(<ProtectedRoute><Rooms/></ProtectedRoute>)}></Route>

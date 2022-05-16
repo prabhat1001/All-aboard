@@ -1,8 +1,10 @@
+
 import React, { useState } from 'react'
 import Card from "../../../../components/shared/Card/Card";
 import Button from '../../../../components/shared/Button/Button';
 import TextInput from '../../../../components/shared/TextInput/TextInput';
 import styles from '../StepPhoneEmail.module.css';
+
 
 const Phone = (onNext) => {
   const {phoneNumber, setPhoneNumber} = useState('');
@@ -19,6 +21,7 @@ const Phone = (onNext) => {
      </p>
     </div>
   </Card>
+
   )
 }
 

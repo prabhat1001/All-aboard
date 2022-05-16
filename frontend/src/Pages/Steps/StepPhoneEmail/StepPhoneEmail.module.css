@@ -2,16 +2,16 @@
     display: flex;
     align-items :center;
     justify-content: center;
-    margin-top:  6rem; ;
-
-
+    margin-top:  6rem;
 }
-.buttonwrap{
+
+.buttonWrap{
     margin-bottom: 20px;
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
 }
+
 .tabButton{
     width: 60px;
     height: 60px;
@@ -20,7 +20,6 @@
     outline: none;
     border-radius: 10px;
     cursor: pointer;
-
 }
 
 .tabButton:last-child{
