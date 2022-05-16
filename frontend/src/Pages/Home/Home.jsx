@@ -21,9 +21,7 @@ const Home = () => {
 
   function startRegister() {
     navigate("/authenticate");     
-    
     console.log("button clicked..");
-
   }
 
   return (
@@ -34,7 +32,7 @@ const Home = () => {
           {/*children */}
           We're working hard to get All-aboard ready for everyone! While we wrap
           up the finishing youches, we’re adding people gradually to make sure
-          nothing breaks :
+          nothing breaks :)
         </p>
 
         <div>
