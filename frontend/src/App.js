@@ -16,23 +16,7 @@ const user = {
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-       <Navigation />
-       {/* <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
-      </Router>  */}
-      <Home/>
-      <Register/>
-      <Login/>
-      
-     
-=======
       {/* <Navigation />  
->>>>>>> d1e098e83fa17fa42ec882d00685de1e45496d02
       
       [IMPORTANT NOTE: Previously we were rendering the navbar outside the routing context. 
                        The Router isn't aware of what routes the links are attempting to link 
