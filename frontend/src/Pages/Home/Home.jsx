@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useNavigate  } from 'react-router-dom'
+import { Link, Navigate, useNavigate  } from 'react-router-dom'
 import Button from '../../components/shared/Button/Button'
 import Card from '../../components/shared/Card/Card'
 import styles from './Home.module.css'
@@ -12,12 +12,16 @@ const Home = () => {
     marginLeft: '10px'
   };
 
-  const navigate=useNavigate();
+  // const navigate=useNavigate();
 
+  // function startRegister(){
+  //   navigate.push('/register');
+  //   console.log('button clicked..');
+  // }
   function startRegister(){
-    navigate.push('/register');
-    console.log('button clicked..');
+    <Link to="/Register"></Link>
   }
+
   return (
     <div className={styles.cardWrapper}>
       <Card title="Welcome to All-aboard !" icon="logo">
