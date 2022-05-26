@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import styles from './Navigation.module.css'
+import React from "react"
+import { Link } from "react-router-dom";
+import styles from "./Navigation.module.css"
 
 const Navigation = () => {
   const brandStyle={
@@ -8,21 +8,21 @@ const Navigation = () => {
     textDecoration: 'none',
     fondWeight: 'bold',
     fontSize: '22px',
-    display: 'flex',
-    alignItems: 'center'
+    // display: 'flex',
+    alignItems: 'center',
+    width:'100px'
   }
   const logoText ={
     marginLeft: '10px',
   }
   return (
     <nav className={`${styles.navbar} container`}>
-      {/* <Link style={brandStyle} to="/"> */}
-        <img src="/images/logo.png" alt="logo" />
-        <span style={logoText}>All aboard</span>
-      {/* </Link> */}
+            <Link style={brandStyle} to="/">
+                <img src="/images/logo.png" alt="logo" />
+                <span style={logoText}>All-aboard</span>
+            </Link>    
     </nav>
-
-  )
+  );
 }
 
-export default Navigation
+export default Navigation;

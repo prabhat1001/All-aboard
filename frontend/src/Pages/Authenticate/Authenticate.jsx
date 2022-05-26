@@ -9,16 +9,16 @@ const steps={
 };
 
 
-const Login = () => {
+const Authenticate = () => {
 
-        const [step,setStep]=useState(1);
+        const [step,setStep]=useState(2);
         const Step=steps[step];
     
 function onNext(){
-        setStep(step+1);
+        setStep(step+1); 
     }
   return <Step onNext={onNext} />
     
 }
-
-export default Login;
+ 
+export default Authenticate;
