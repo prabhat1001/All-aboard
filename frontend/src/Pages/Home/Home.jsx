@@ -33,7 +33,7 @@ const Home = () => {
         <p className={styles.text}>
           {/*children */}
           We're working hard to get All-aboard ready for everyone! While we wrap
-          up the finishing youches, we’re adding people gradually to make sure
+          up the finishing touches, we’re adding people gradually to make sure
           nothing breaks :
         </p>
 

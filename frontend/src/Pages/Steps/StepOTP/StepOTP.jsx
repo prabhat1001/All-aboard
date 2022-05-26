@@ -4,7 +4,7 @@ import Card from '../../../components/shared/Card/Card';
 import TextInput from '../../../components/shared/TextInput/TextInput';
 import styles from './StepOTP.module.css'
 
-const StepOTP = ({onNext}) => {
+const StepOTP = () => {
   const [otp, setotp] = useState('');
   return (
     <>
